@@ -3,5 +3,5 @@
 <div id="profile">
   <div class="twiddr_name"><%= @user.twiddr_name -%></div>
   <div class="email"><%= @user.email -%></div>
-  <div class="follow">Follow</div>
+  <div class="follow"><%= button_to "Follow #{@user.twiddr_name}", user_follows_path(@user) -%></div>
 </div>

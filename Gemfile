@@ -2,7 +2,7 @@ source :rubygems
 
 gem "rails", ">= 3.0"
 gem "rack"
-gem "clearance", "0.9.0.rc9"
+gem "clearance", ">= 0.9.0.rc9"
 gem "haml"
 gem "high_voltage"
 gem "hoptoad_notifier"
@@ -16,7 +16,9 @@ gem "dynamic_form"
 
 # http://blog.davidchelimsky.net/2010/07/11/rspec-rails-2-generators-and-rake-tasks/
 group :development, :test, :cucumber do
-  gem "rspec-rails", "~> 2.0.0"
+  gem "autotest"
+  gem "autotest-rails"
+  gem "rspec-rails", ">= 2.0.0"
   gem "ruby-debug", :platforms => :mri_18
   gem "ruby-debug19", :platforms => :mri_19
 end

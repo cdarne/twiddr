@@ -9,6 +9,8 @@ Twiddr::Application.routes.draw do
     resource :confirmation,
       :controller => 'clearance/confirmations',
       :only => [:new, :create]
+
+    resource :follows, :only => [:create]
   end
 
 
