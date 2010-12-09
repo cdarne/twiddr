@@ -1,5 +1,7 @@
 Twiddr::Application.routes.draw do
-  root :to => 'Clearance::Sessions#new'
+  root :to => 'welcome#index'
+
+  resource :welcome, :only => [:index]
 
   resources :users, :controller => "users", :only => [:show, :create] do
     resource :password,

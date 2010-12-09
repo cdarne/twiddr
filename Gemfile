@@ -18,13 +18,14 @@ gem "dynamic_form"
 group :development, :test, :cucumber do
   gem "autotest"
   gem "autotest-rails"
-  gem "rspec-rails", ">= 2.0.0"
+  gem "spork"
   gem "ruby-debug", :platforms => :mri_18
   gem "ruby-debug19", :platforms => :mri_19
 end
 
 group :test, :cucumber do
   gem "cucumber-rails"
+  gem "rspec-rails", ">= 2.0.0"
   gem "factory_girl_rails"
   gem "bourne"
   gem "capybara"

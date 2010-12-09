@@ -12,4 +12,4 @@ Feature: Follow twiddr users
     And I press "Follow bob"
     Then I should be on the home page
     And I should see "You are now following bob!"
-    And I should see "bob" within "div.folowing"
+    And I should see "bob" within "li.following"

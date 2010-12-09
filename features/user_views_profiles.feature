@@ -11,4 +11,4 @@ Feature: user profiles
     When I go to the profile page for "hgimenez"
     Then I should see "hgimenez" within "div.twiddr_name"
     And I should see "hgimenez@example.com" within "div.email"
-    And I should see "Follow"
+    And I should see the "Follow hgimenez" button

@@ -217,3 +217,7 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+Then /^I should see the "([^"]*)" button$/ do |button_label|
+  page.should have_button(button_label)
+end

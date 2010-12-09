@@ -1,0 +1,6 @@
+<h3>You follow</h3>
+<ul>
+  <% current_user.followings.each do |following| %>
+    <li class="following"><%= following.followed_user.twiddr_name -%></li>
+  <% end %>
+</ul>
